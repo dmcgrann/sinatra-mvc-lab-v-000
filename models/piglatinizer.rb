@@ -1,18 +1,19 @@
 class PigLatinizer
   attr_accessor :words
   
-  def initialize
+  
+  def initialize(words)
     @words = words
   end
-  
+
+
   def piglatinize(word)
-  if word =~ (/\A[aeiou]/i)
-    word = word + 'ay'
-  elsif word =~ (/\A[^aeiou]/i)
-    match = /\A[^aeiou]/i.match(word)
-    word = match.post_match + match.to_s + 'ay'
+    if word.match /\A([aeiou]|y[^aeiou]|xr)/
+      word + "ay"
+    else
+      consonant, rest = word.scan(/\A([^aeiou]?qu|[^aeiou]+)(.*)/).first
+      rest + consonant + "ay"
+    end
   end
-  word
-end
   
 end
