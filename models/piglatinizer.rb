@@ -8,7 +8,6 @@ class PigLatinizer
   def piglatinize 
     input = words.split("")
     input.reverse
-    end
   end
   
 end
