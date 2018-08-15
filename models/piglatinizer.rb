@@ -8,8 +8,8 @@ class PigLatinizer
   def piglatinize 
     input = words.split(" ")
     
-    input.reverse.each do |c|
-      c.flatten
+    input.each do |c|
+      c.reverse
     end
   end
   
