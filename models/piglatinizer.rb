@@ -6,6 +6,9 @@ class PigLatinizer
   end
   
   def piglatinize 
-    @input = words.split(" ")
+    input = words.split(" ")
     
-    input.each do 
+    input.each {|content| content.reverse}
+  end
+  
+end
