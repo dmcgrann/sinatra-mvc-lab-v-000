@@ -6,12 +6,7 @@ class PigLatinizer
   end
   
   def piglatinize 
-    input = words.split("")
-    array = []
-    input.reverse.each do |word|
-      array << word
-    end
-    array.join(" ")
+    
   end
   
 end
