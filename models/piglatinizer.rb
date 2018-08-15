@@ -8,4 +8,4 @@ class PigLatinizer
   def piglatinize 
     @input = words.split(" ")
     
-    input
+    input.each do 
