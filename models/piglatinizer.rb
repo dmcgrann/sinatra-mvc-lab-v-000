@@ -10,7 +10,7 @@ class PigLatinizer
   def piglatinize(word)
     if word.match /\A([aeiou]|y[^aeiou]|xr)/
       word + "ay"
-    elsif word[0].match(/[aeiouAEIOU]/
+    elsif word.match(/[aeiouAEIOU]/
       word + "way"
     else
       consonant, rest = word.scan(/\A([^aeiou]?qu|[^aeiou]+)(.*)/).first
