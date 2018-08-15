@@ -5,4 +5,5 @@ class PigLatinizer
     @words = words
   end
   
-  def piglatinize
+  def piglatinize 
+    @words.split
