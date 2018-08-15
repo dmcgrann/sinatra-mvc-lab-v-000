@@ -11,7 +11,7 @@ class PigLatinizer
     input.reverse.each do |word|
       array << word
     end
-    array.flatten
+    array.join(" ")
   end
   
 end
