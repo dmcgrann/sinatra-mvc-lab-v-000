@@ -9,6 +9,7 @@ class PigLatinizer
     input = words.split("")
     input.each do |word|
       word.reverse.join(", ")
+    end
   end
   
 end
