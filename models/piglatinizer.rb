@@ -6,10 +6,9 @@ class PigLatinizer
   end
   
   def piglatinize 
-    
-    
-    @words.each do |c|
-      c.reverse
+    input = @words.reverse
+    input.each do |c|
+      c
     end
   end
   
