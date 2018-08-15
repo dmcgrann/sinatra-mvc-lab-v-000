@@ -8,7 +8,7 @@ class PigLatinizer
   def piglatinize 
     input = words.split(" ")
     
-    input.each {|content| "#{content.reverse}"}
+    input.reverse.map {|content| content}
   end
   
 end
