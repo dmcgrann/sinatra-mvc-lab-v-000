@@ -5,7 +5,8 @@ class PigLatinizer
     @words = words
   end
   
-  def piglatinize(word) 
+  def piglatinize
+    input = words.reverse + "ay"
     
   end
   
