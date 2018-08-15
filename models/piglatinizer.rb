@@ -7,7 +7,8 @@ class PigLatinizer
   
   def piglatinize 
     input = words.split("")
-    input.reverse
+    input.each do |word|
+      word.reverse.join(", ")
   end
   
 end
