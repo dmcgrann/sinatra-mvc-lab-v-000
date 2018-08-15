@@ -11,6 +11,8 @@ class PigLatinizer
   elsif word =~ (/\A[^aeiou]/i)
     match = /\A[^aeiou]/i.match(word)
     word = match.post_match + match.to_s + 'ay'
+  else word =~ (/\A[aeiou]/i)
+    word = word +"way"
   end
   word
 end
