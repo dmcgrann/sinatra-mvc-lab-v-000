@@ -13,7 +13,8 @@ class PigLatinizer
         pig_word = p.split(/([aeiou])/,2)
         "#{pig_word[1]}#{pig_word[2]}#{pig_word[0]}ay"
       end
-    end.join(" ")
+      pig_word.join(" ")
+    end
   end
   
 end
